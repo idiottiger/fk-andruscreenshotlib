@@ -1,7 +1,7 @@
 fk-andruscreenshotlib
 =====================
 
-android screen shot library, this library base on fbshot
+android screen shot library, this library base on fbshot, and the library also need root permission.
 
 this is a android library, you can easily reference this library in the your project
 
