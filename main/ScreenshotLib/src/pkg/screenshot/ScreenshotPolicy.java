@@ -66,11 +66,12 @@ public class ScreenshotPolicy {
      * /data/data/$package_name/lib/libscreenshot.so
      * </pre>
      * 
+     * @deprecated the {@link Screenshot} will auto load the library
      * @param context
      */
     public static void loadScreenshotLibrary(Context context) {
-        String path = String.format(LIB_PATH, context.getPackageName());
-        System.load(path);
+        // String path = String.format(LIB_PATH, context.getPackageName());
+        // System.load(path);
     }
 
     /**

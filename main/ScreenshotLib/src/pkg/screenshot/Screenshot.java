@@ -31,6 +31,10 @@ public class Screenshot {
 
     public static final String TAG = "Screenshot";
 
+    static {
+        System.loadLibrary("screenshot");
+    }
+
     /**
      * take screen successful
      */

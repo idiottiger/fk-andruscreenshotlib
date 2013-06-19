@@ -27,7 +27,7 @@ public class ScreenshotUtils {
     static final int AUTH_HEAD_BYTES_SIZE = 16, AUTH_END_BYTES_SIZE = AUTH_END.getBytes().length;
 
     /** the default jpg compress quality */
-    static final int DEFAULT_COMPRESS_QUALITY = 85;
+    static final int DEFAULT_COMPRESS_QUALITY = 100;
 
     /** the default bitmap json key */
     public static final String DEFAULT_GET_BITMAP_JSON_KEY = "GetJsonImageResult", DEFAULT_UPLOAD_BITMAP_JSON_KEY = "UploadJsonImage";
@@ -106,7 +106,7 @@ public class ScreenshotUtils {
      */
     public static void saveBitmap2File(Bitmap map, String file) throws IOException {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file), 16 * 1024);
-        map.compress(Bitmap.CompressFormat.JPEG, DEFAULT_COMPRESS_QUALITY, bos);
+        map.compress(Bitmap.CompressFormat.PNG, DEFAULT_COMPRESS_QUALITY, bos);
         bos.flush();
         bos.close();
         bos = null;
